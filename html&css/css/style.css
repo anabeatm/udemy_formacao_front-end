@@ -1,0 +1,13 @@
+/* Aula 04 - External CSS */
+body{
+    padding-bottom: 500px;
+}
+
+
+h3{
+    color: green;
+}
+
+p{
+    color: burlywood;
+}
