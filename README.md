@@ -23,7 +23,7 @@ O repositório está organizado em pastas correspondentes aos arquivos, como có
 
 2. **Navegar até o diretório do projeto desejado**:
     ```bash
-    cd udemy_formacao_front-end/html&css/html
+    cd udemy_formacao_front-end/html_css/html
     ```
 
 3. **Abrir os arquivos em seu editor de código preferido**.
