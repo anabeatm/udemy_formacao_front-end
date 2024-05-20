@@ -36,5 +36,3 @@ Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para abrir uma i
 
 - **Email**: ana.beat20051@gmail.com
 - **LinkedIn**: [Ana Beatriz Tavares Malaquias](https://www.linkedin.com/in/anbeeatavares-malaquias-80375b2b7/)
-
-
