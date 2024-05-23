@@ -3,11 +3,266 @@ body{
     padding-bottom: 500px;
 }
 
-
-h3{
+h3 {
     color: green;
 }
 
-p{
+p {
     color: burlywood;
+}
+
+
+/* Aula 07 - Classes */
+.paragraph {
+    background-color: azure;
+    color: tomato;
+    font-family: 'Segoe UI';
+    padding: 5px;
+}
+
+
+/* Aula 08 - IDs */
+#exclusive-title {
+    background-color: blueviolet;
+    color: yellowgreen;
+    padding: 10px;
+}
+
+
+/* Aula 09 - Múltiplas regras, ordem do CSS */
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 4px solid green;
+}
+
+
+/* Aula 10 - Nome de cor */
+.color-name {
+    color: khaki;
+}
+
+
+/* Aula 11 - Cores Hexadecimais */
+.hex {
+    color: #55a398;
+}
+
+.hex-2 {
+    color: #574D6F;
+}
+
+
+/* Aula 12 - RGB */
+.rgb {
+    color: rgb(255, 0, 0);
+}
+
+.rgb-2 {
+    color: rgb(65, 100, 89);
+}
+
+
+/* Aula 13 - RGBA */
+.rgba {
+    color: rgb(255, 0, 0, 0.5); /* 0.5 é a opacidade do título */
+}
+
+
+/* Aula 14 - HSL */
+.hsl {
+    color: hsl(100, 20%, 50%);
+}
+
+.hsl-2 {
+    color: hsl(4, 80%, 90%);
+}
+
+
+/* Aula 15 - Background Color */
+.bg {
+    background-color: #000;
+}
+
+.bg-2 {
+    background-color: rgb(56, 47, 95);
+    color: aliceblue;
+}
+
+
+/* Aula 16 - Opacidade do background */
+.bg-opacity {
+    background-color: green;
+    opacity: 0.2;
+}
+
+
+/* Aula 17 - RGBA do background */
+.rgba-opacity {
+    background-color: rgba(90, 120, 20, 0.2);
+    color: #000;
+}
+
+
+/* Aula 18 - Foto no background */
+.bg-image {
+    background-image: url("../css/img/quokka.jpg");
+    padding: 10px;
+    color: black;
+}
+
+
+/* Aula 19 - Centralizar imagem no Background */
+.not-centered-bg,
+.centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../css/img/pretty-girl.jpg");
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Aula 20 - Largura e altura */
+.height-width {
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width-2 {
+    height: 300px;
+    background-color: #333;
+}
+
+
+/* Aula 21 - Padding */
+.without-padding {
+    background-color: #111;
+    color: #fff;  
+}
+
+.with-padding {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+
+/* Aula 22 - Padding Individual */
+.padding-individual {
+    background-color: #222;
+    color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+
+/* Aula 23 - Shorthand */
+.shorthand-padding {
+    background-color: #444;
+    padding: 6px    12px    10px    24px;
+    /*      cima, direita, baixo, esquerda  */
+}
+
+.shorthand-padding-2 {
+    background-color: #555;
+    padding: 10px 20px; /* utilizado em botões*/
+}
+
+
+/* Aula 24 - Padding com width */
+.without-border-box {
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.with-border-box {
+    background-color: #666;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+/* Aula 25 - Border */
+.borda {
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.borda-2 {
+    border: 2px dotted #67A328;
+    padding: 25px;
+}
+
+
+/* Aula 26 - Bordas individuais */
+.border-left {
+    border-left: 3px solid red;
+    background-color: #222;
+    padding: 25px;
+}
+
+.border-bottom {
+    border-left: 5px double #399;
+    background-color: #222;
+    padding: 20px;
+}
+
+
+/* Aula 27 - Borda arredondada */
+.rounded-p {
+    border: 4px solid blue;
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 15px;
+}
+.rounded-p-2 {
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+
+/* Aula 28 - Margin */
+.margin{
+    margin: 10px;
+    background-color: #444;
+}
+.margin-top {
+    margin-top: 50px;
+    background-color: #666;
+    padding: 10px;
+}
+.margin-shorthand {
+    background-color: red;
+    margin: 5px 10px 15px 20px;
+}
+
+
+/* Aula 31 - Box Model */
+.box-model {
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #84F238;
+    border-radius: 7px;
+    width /*largura*/: 300px;
+    height /*altura*/: 400px;
 }

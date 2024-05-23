@@ -1,0 +1,48 @@
+/* 
+1. Crie um elemento que tenha todas as regras do box model; <OK>
+
+2. Tente inserir diferentes cores para destacar as áreas; <OK, fiz o máximo que consegui 
+pensar>
+
+3. Insira um texto no elemento para a tag <h2>; <OK>
+
+4. Mude a cor de fundo do texto; <OK>
+
+5. O elemento do box model deve ter um id, um texto e uma classe; <OK>
+
+6. Adicione uma regra chamada outline, com o mesmo valor da 
+propriedade border, apenas com cor diferente. <OK> 
+*/
+
+.body-color {
+    background-color: #ffb7c5;
+}
+
+.title, 
+.conteudo {
+    font-family: Georgia;
+}
+
+#title {
+    color: #c5ffb7;
+    padding: 10px 20px;
+    /* border: 5px solid #c5ffb7; */
+}
+
+#sub-title {
+    color: #000;
+    padding: 5px 10px;
+    margin: 10px 2px;
+    /* margin-top: 10px; */
+    border: 4px dotted #c5ffb7;
+    border-radius: 10px;
+    width: 750px;
+    height: 100px; 
+}
+
+.conteudo {
+    outline: 4px dotted #b7c5ff;
+    padding: 5px;
+    margin-top: 2px;
+    width: 900px;
+}
