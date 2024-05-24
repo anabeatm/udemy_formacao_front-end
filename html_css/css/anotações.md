@@ -206,3 +206,131 @@ h1 {
 - estas propriedades consistem no conteúdo do elemento;
 - podemos alterara as duas e mudar o tamanho do elemento na tela;
 - alguns elementos do html - blocks elements - já vem com 100% de largura, ou seja, preenchendo a tela toda na horizontal.
+
+## padding
+
+- padding é o espaço entre o conteúdo e a borda do elemento, também conhecimento como espaçamento interno;
+- este recurso é utilizado para criar uma distância entre o conteúdo (texto) e a extremidade do elemento.
+- padding individual
+    - podemos adicionar o padding aos lados individuais de um elemento;
+    - a regra é: `padding-*` ;
+    - onde * pode ser: top, left, right ou bottom;
+    - assim teremos valores customizados em cada um dos lados do elemento.
+- shorthand padding
+    - as propriedades de shorthand nos permite adicionar padding em todas as direções com uma regra;
+    - utilizamos a regra padding e configuramos top, right, bottom e left, nessa ordem;
+    - exemplo: `padding: 10px 5px 12px 20px;` ;
+    - esta regra de shorthand pode ser aplicada para outras propriedades, como a margin.
+- padding e width
+    - a padding é adicionada a largura do elemento, e isso pode ser um problema;
+    - por exemplo: se precisamos seguir um layout perfeitamente;
+    - um elemento com 200px de width e 25px de padding tem um tamanho total de 250px na horizontal;
+    - podemos diminuir a largura do elemento, mais isso dificulta o cálculo;
+    - isso pode ser resolvido com a regra box-sizing e o valor de border-box, fazendo o elemento respeitar o tamanho que está em width. Exemplo: `box-sizing: border-box;`
+
+## bordas
+
+- a borda é o elemento central, fica entre padding e margin;
+- padding é o espaçamento interno e margin externo;
+- geralmente esta regra é utilizado com o propósito decorativo;
+- a regra border é definida em algumas partes: tamanho, aspecto e cor da borda.
+- bordas individuais
+    - podemos adicionar borda aos lados específicos de um elemento também;
+    - podemos utilizar `border-*`, onde * pode ser top, right, bottom e left;
+    
+- arredondamento de borda
+    - com a propriedade border-radius podemos arredondar os cantos de um elemento;
+    - podemos aplicá-la da forma: `border-radius: 5px;` ;
+    - fazendo com que o canto seja arredondado em 5px;
+    - podemos, também, arredondar elementos que não seja a regra de borda aplicada.
+
+## margin
+
+- a propriedade margin é responsável pelo espaçamento externo do elemento;
+- podemos aplicar o recurso como se aplicar o padding, ou seja, lados individuais e o shorthand.
+
+## alinhamento de texto
+
+- os textos podem ser alinhados em várias direções;
+- por padrão, ele é alinhado a esquerda;
+- porém com a regra `text-align`, configuramos center ou right.
+- decorando textos
+    - com a `decoration`, podemos adicionar efeitos ao texto;
+    - é possível colocar um underline ou até mesmo uma linha que corta o texto;
+    - a tag `<a>` tem uma underline por padrão, podendo ser removida com a regra `text-decoration` e o valor none.
+    
+- transformando textos
+    - com a regra text-transform podemos alterar como o texto é exibido;
+    - possível alterar entre uppercase (maiúsculas) e lowercase (minúsculas);
+    - Atenção: o css deve ser aplicado quando queremos texto em uppercase, nunca escreva o texto com capslock no html.
+
+## espaçamento de letras
+
+- com a regra `letter-spacing` podemos alterar o espaçamento entre letras de um texto;
+- a regra aplicada é: `letter-spacing: 5px;`.
+
+## fontes
+
+- com CSS podemos alterar o tipo da fonte com a regra `font-family` ;
+- as regras possíveis são: serif, sans-serif, monospace, cursive e fantasy;
+- todos os navegadores tem várias fontes que podem ser utilizadas;
+- e ainda é possível adicionar fontes externas - por exemplo - com o google fonts.
+- estilo de fonte
+    - podemos utilizar a propriedade `font-style` para mudar o aspecto das letras;
+    - os valores são: normal, italic e oblique;
+    - normal é o valor default;
+    - oblique é como o tipo itálico com pequenas diferenças.
+- font-weight (peso da fonte)
+    - a propriedade `font-weight` pode deixar a fonte de nosso texto mais fina ou grossa;
+    - os valores vão de 100 a 900, sendo 100 o mais fino;
+    - algumas palavras também funcionam como valores, por exemplo: `bold(600)` ;
+    - existem fontes que não tem todas as variações, devemos tomar cuidado com isso!
+- font-size (tamanho da fonte)
+    - a regra de font-size é responsável por deixar a fonte grande ou pequena;
+    - quanto menor o valor, menor a fonte;
+    - esta regra é configurada com unidades de medida, como px.
+
+## display
+
+- em html e css, temos alguns elementos que são considerados de bloco e outros inline;
+- a tag <div> é um exemplo de block, e span um exemplo de inline;
+- com a regra display, podemos mudar este comportamento, ou seja, deixar uma <div> como inline.
+- escondendo elementos
+    - existem situações que precisamos ocultar elementos;
+    - basta adicionar a regra display com o valor none;
+    - o elemento não será exibido, porém ainda constará no html.
+
+## positions
+
+- a regra `position` e seus valores são responsáveis por posicionar o elemento na tela;
+- existem algumas possibilidades como: `relative, fixed, absolute, sticky`, etc. ;
+- o valor padrão é `static`, todo elemento começa com esta posição;
+- esta regra é essencial quando precisamos mudar onde o elemento deve ficar no projeto.
+- position static
+    - o valor de static na position não faz nada com o elemento;
+    - este é o valor padrão;
+    - outros valores são afetados pelas regras top, left, right e bottom, porém static não;
+    - static apenas segue o fluxo do html.
+- position relative
+    - as regras top, left, right e bottom, movem o elemento pela tela;
+    - o elemento ainda segue o fluxo do html;
+    - normalmente não se é utilizado as regras de posição com relative.
+- position absolute
+    - com a valor de absolute, o elemento pode ser movido pela tela toda;
+    - ou seja, quebramos o fluxo do html;
+    - esta regra também é afetada por top, left, right e bottom.
+- relative com absolute
+    - podemos resolver o problema de absolute com relative;
+    - um elemento com posição absoluta é ligado ao elemento mais próximo com posição relativa, se não é ligado ao body.
+- position fixed
+    - o elemento pode ser fixado na tela;
+    - mesmo após o scroll na página, o elemento permanece na mesma posição, estando sempre presente;
+    - o recurso é frequentemente utilizado para criar barra de navegação fixa.
+- position sticky
+    - faz o elemento ficar fixo na tela;
+    - porém quando o elemento volta para sua posição original, ele se comporta como relative;
+    - a posição do elemento é onde ele foi inserido no html.
+- z index
+    - se temos dois elementos com as mesmas posições, ou se elas colidem na página, podemos escolher qual será exibido;
+    - utilizamos o z-index;
+    - o elemento com maior valor prevalece.
