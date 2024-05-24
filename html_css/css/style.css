@@ -1,4 +1,5 @@
 /* Aula 04 - External CSS */
+
 body{
     padding-bottom: 500px;
 }
@@ -13,6 +14,7 @@ p {
 
 
 /* Aula 07 - Classes */
+
 .paragraph {
     background-color: azure;
     color: tomato;
@@ -22,6 +24,7 @@ p {
 
 
 /* Aula 08 - IDs */
+
 #exclusive-title {
     background-color: blueviolet;
     color: yellowgreen;
@@ -30,6 +33,7 @@ p {
 
 
 /* Aula 09 - Múltiplas regras, ordem do CSS */
+
 h2 {
     border-bottom: 2px solid red;
 }
@@ -44,12 +48,14 @@ h2 {
 
 
 /* Aula 10 - Nome de cor */
+
 .color-name {
     color: khaki;
 }
 
 
 /* Aula 11 - Cores Hexadecimais */
+
 .hex {
     color: #55a398;
 }
@@ -60,6 +66,7 @@ h2 {
 
 
 /* Aula 12 - RGB */
+
 .rgb {
     color: rgb(255, 0, 0);
 }
@@ -70,12 +77,14 @@ h2 {
 
 
 /* Aula 13 - RGBA */
+
 .rgba {
     color: rgb(255, 0, 0, 0.5); /* 0.5 é a opacidade do título */
 }
 
 
 /* Aula 14 - HSL */
+
 .hsl {
     color: hsl(100, 20%, 50%);
 }
@@ -86,6 +95,7 @@ h2 {
 
 
 /* Aula 15 - Background Color */
+
 .bg {
     background-color: #000;
 }
@@ -97,6 +107,7 @@ h2 {
 
 
 /* Aula 16 - Opacidade do background */
+
 .bg-opacity {
     background-color: green;
     opacity: 0.2;
@@ -104,6 +115,7 @@ h2 {
 
 
 /* Aula 17 - RGBA do background */
+
 .rgba-opacity {
     background-color: rgba(90, 120, 20, 0.2);
     color: #000;
@@ -111,6 +123,7 @@ h2 {
 
 
 /* Aula 18 - Foto no background */
+
 .bg-image {
     background-image: url("../css/img/quokka.jpg");
     padding: 10px;
@@ -119,6 +132,7 @@ h2 {
 
 
 /* Aula 19 - Centralizar imagem no Background */
+
 .not-centered-bg,
 .centered-bg {
     height: 400px;
@@ -133,6 +147,7 @@ h2 {
 
 
 /* Aula 20 - Largura e altura */
+
 .height-width {
     height: 200px;
     width: 100px;
@@ -146,6 +161,7 @@ h2 {
 
 
 /* Aula 21 - Padding */
+
 .without-padding {
     background-color: #111;
     color: #fff;  
@@ -159,6 +175,7 @@ h2 {
 
 
 /* Aula 22 - Padding Individual */
+
 .padding-individual {
     background-color: #222;
     color: white;
@@ -170,6 +187,7 @@ h2 {
 
 
 /* Aula 23 - Shorthand */
+
 .shorthand-padding {
     background-color: #444;
     padding: 6px    12px    10px    24px;
@@ -183,6 +201,7 @@ h2 {
 
 
 /* Aula 24 - Padding com width */
+
 .without-border-box {
     background-color: #444;
     color: #fff;
@@ -200,6 +219,7 @@ h2 {
 
 
 /* Aula 25 - Border */
+
 .borda {
     border: 5px solid red;
     padding: 10px;
@@ -212,6 +232,7 @@ h2 {
 
 
 /* Aula 26 - Bordas individuais */
+
 .border-left {
     border-left: 3px solid red;
     background-color: #222;
@@ -226,6 +247,7 @@ h2 {
 
 
 /* Aula 27 - Borda arredondada */
+
 .rounded-p {
     border: 4px solid blue;
     background-color: #000;
@@ -233,6 +255,7 @@ h2 {
     padding: 15px;
     border-radius: 15px;
 }
+
 .rounded-p-2 {
     background-color: #000;
     color: blue;
@@ -242,22 +265,26 @@ h2 {
 
 
 /* Aula 28 - Margin */
+
 .margin{
     margin: 10px;
     background-color: #444;
 }
+
 .margin-top {
     margin-top: 50px;
     background-color: #666;
     padding: 10px;
 }
+
 .margin-shorthand {
     background-color: red;
     margin: 5px 10px 15px 20px;
 }
 
 
-/* Aula 31 - Box Model */
+/* Aula 29 - Box Model */
+
 .box-model {
     margin: 20px;
     padding: 15px 25px;
@@ -265,4 +292,270 @@ h2 {
     border-radius: 7px;
     width /*largura*/: 300px;
     height /*altura*/: 400px;
+}
+
+
+/* Aula 30 - Alinhamento de texto */
+
+.text-aligned-right {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+
+/* Aula 31 - Texto decorativo */
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+    color: red;
+}
+
+
+/* Aula 32 - Transformação do texto */
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+
+/* Aula 33 - Espaçamento de letras */
+
+.spacing {
+    letter-spacing: 5px;
+}
+
+
+/* Aula 34 - Fontes  */
+
+.serif {
+    font-family: Georgia;
+}
+
+.sans-serif {
+    font-family: Helvetica;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+
+/* Aula 35 - Estilo de fontes */
+
+.italic {
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+
+/*  Aula 36 - Peso da fonte */
+
+.thin, .bold, .bolder {
+    font-family: helvetica;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+
+/* Aula 37 - Tamanho da fonte */
+
+.small {
+    font-size: 6px;
+    background-color: mediumseagreen;
+}
+
+.big {
+    font-size: 90px;
+    background-color: mediumseagreen;
+}
+
+
+/* Aula 38 - Display */
+
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    background-color: #4f894f;
+    display: block;
+    margin: 10px;
+}
+
+
+/* Aula 39 - Ocultando elementos */
+
+.invisible {
+    display: none;
+}
+
+
+/* Aula 40 - Posição estática */
+
+.static {
+    position: static;
+    background-color: #10a;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Aula 41 - Posição relativa */
+
+.relative {
+    position: relative;
+    background-color: #89D;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 204px;
+    /* A posição relative pode atrapalhar na posição 
+    de outros elementos. */
+}
+
+
+/* Aula 42 - Posição absoluta */
+
+.absolute {
+    position: relative;
+    background-color: #98df98;
+    width: 100px;
+    height: 100px;
+    top: 90px;
+    left: 50px;
+    /* A posição absolute pode atrapalhar na posição 
+    de outros elementos. */
+}
+
+
+/* Aula 43 - Relative com absolute */
+
+.relative-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 100px;
+    position: relative;
+}
+
+.absolute-1, 
+.absolute-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #55a398;
+    position: absolute;
+}
+
+.absolute-1 {
+    top: 2px;
+    right: 2px;
+}
+
+.absolute-2 {
+    top: 2px;
+    left: 2px;
+}
+
+
+/* Aula 44 - Posição fixa */
+.fixed {
+    width: 50px;
+    height: 50px;
+    background-color: #55a398;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    /* Position: fixed; fica em frente de todos os objetos
+    se mantendo fixo na tela. */
+}
+
+
+/* Aula 45 - Posição sticky */
+.sticky {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6600;
+    position: sticky;
+    top: 100px;
+}
+
+
+/* Aula 46 - Z Index */
+
+.z-index {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 100px;
+    position: relative;
+}
+
+.z-index-1, 
+.z-index-2, 
+.z-index-3 {
+    width: 50px;
+    height: 50px;
+    background-color: #55a398;
+    position: absolute;
+}
+
+.z-index-1 {
+    top: 0;
+    left: 0;
+    background-color: #244843;
+    z-index: 1;
+}
+
+.z-index-2 {
+    top: 5px;
+    left: 5px;
+    background-color: #87ffef;
+    z-index: 3;
+}
+
+.z-index-3 {
+    top: 10px;
+    left: 10px;
+    z-index: 2;
 }

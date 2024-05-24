@@ -1,4 +1,6 @@
-# maneiras de adicionar CSS
+# CSS
+
+## maneiras de adicionar CSS
 
 - **inline**: quando os estilos são adicionados por um atributo;
 - **internal**: quando o css é adicionado na tag ```<head>```;

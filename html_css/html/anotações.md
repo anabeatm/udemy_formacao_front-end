@@ -1,5 +1,6 @@
+# HTML
 
-# a anatomia das tags
+## a anatomia das tags
 
 - é o elemento principal do html;
 - toda tag tem um nome e um propósito, a tag p serve para parágrafos;
