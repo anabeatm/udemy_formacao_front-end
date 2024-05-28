@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Aula 01 - Primeiro formulário -->
+    <!-- Aula 02 - Atributos do formulário -->
+    <h2>Formulários HTML</h2>
+    <form action="register.php" method="get">
+        <div>
+            <label>Nome:</label>
+            <input type="text" />
+        </div>
+        <!-- Aula 03 - Atributo name -->
+        <div>
+        <!-- Aula 04 - Atributo label -->
+        <label for="age">Idade:</label>
+        <input type="text" name="age" />
+        </div>
+        <!-- Aula 06 - Select -->
+        <div>
+            <label for="job">Selecione a sua profissão</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">DevOps</option>
+            </select>
+        </div>
+        <!-- Aula 07 - Atributo selected -->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+        </div>
+        <!-- Aula 08 - Múltiplas opções -->
+        <div>
+            <label for="items">Selecione os itens desejados:</label>
+            <select name="items" multiple>
+                <option value="pera">Pera</option>
+                <option value="feijao">Feijão</option>
+                <option value="arroz">Arroz</option>
+                <option value="maca">Maça</option>
+            </select>
+        </div>
+        <!-- Aula 09 - Textarea -->
+        <div>
+            <label for="comment">Escreva abaixo o que achou do post:</label>
+            <textarea name="comment"></textarea>
+        </div>
+        <!-- Aula 10 - Fieldset e legend -->
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+        <!-- Aula 11 - Datalist -->
+        <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="Creme"></option>
+                <option value="Abacaxi"></option>
+                <option value="Morango"></option>
+                <option value="Chocolate"></option>
+            </datalist>
+        </div>
+        <!-- Aula 12 - Senha -->
+        <div>
+            <label for="password">Digite sua senha:</label>
+            <input type="password" name="password">
+        </div>
+        <!-- Aula 14 - Radio Button -->
+        <div>
+            <label for="car_model">Escolha o modelo do seu carro:</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ferrari" name="car_model">
+                <label for="ferrari">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="renault" name="car_model">
+                <label for="renault">Renault</label>
+            </div>
+        </div>
+        <!-- Aula 15 - Checkbox -->
+        <div>
+            <label for="optionals">Opcionais do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="big_tires">
+                <label for="big_tires">Pneus Grandes</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="turbo_engine">
+                <label for="turbo_engine">Motor Turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="hybrid">
+                <label for="hybrid">Híbrido</label>
+            </div>
+        </div>
+        <!-- Aula 16 - Datas -->
+        <div>
+            <label for="birthday">Data de nascimento:</label>
+            <input type="date" name="birthday">
+        </div>
+        <!-- Aula 17 - Arquivos -->
+        <div>
+            <label for="image">Insira sua imagem:</label>
+            <input type="file" name="image">
+        </div>
+        <!-- Aula 18 - Números -->
+        <div>
+            <label for="salary">Quando você recebe de salário?</label>
+            <input type="number" name="salary">
+        </div>
+        <!-- Aula 19 - Email -->
+        <div>
+            <label for="email">Insira seu email:</label>
+            <input type="email" name="email">
+        </div>
+        <!-- Aula 20 - Value -->
+        <div>
+            <label for="value">Digite um valor:</label>
+            <input type="text" value="Valor" name="value">
+        </div>
+        <!-- Aula 21 - Disabled -->
+        <div>
+            <p>Tente mudar o valor:</p>
+            <input type="text" value="Não precisa preencher" disabled>
+        </div>
+        <!-- Aula 22 - Placeholder -->
+        <div>
+            <label for="current_job">Digite sua profissão:</label>
+            <input type="text" name="current_job" placeholder="Desenvolvedor">
+        </div>
+        <!-- Aula 23 - Required -->
+        <div>
+            <label for="birthyear">Ano nascimento:</label>
+            <input type="text" placeholder="1999" required>
+        </div>
+        <!-- Aula 13 - Resetar form -->
+        <input type="reset" value="Limpar">
+        <!-- Aula 05 - Envio do formulário -->
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
