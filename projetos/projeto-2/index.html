@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre seu currículo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <h3>Cadastre seu currículo!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Cadastro</p>
+            </div>
+            <!-- Corpo -->
+            <div class="form-body">
+                <h1 class="form-title">Cadastre seu currículo!</h1>
+                <p>Descreva suas características e marque as características que possui.
+                </p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Nome completo<span class="required-field"> *</span>
+                        </label>
+                        <input 
+                        type="text"
+                        name="title" 
+                        id="title" 
+                        class="block" 
+                        placeholder="Nome Sobrenome"
+                        minlength="1"
+                        maxlength="30"
+                        required
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Pretensão salarial<span class="required-field"> *</span>
+                        </label>
+                        <input 
+                        type="number"
+                        name="price" 
+                        id="price" 
+                        class="block" 
+                        placeholder="Defina sua pretensão salarial"
+                        required
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Experiências<span class="required-field"> *</span>
+                        </label>
+                        <textarea 
+                        name="description" 
+                        id="description" 
+                        class="block" 
+                        placeholder="Coloque em detalhes suas experiências anteriores"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="brand">Objetivos<span class="required-field"> *</span>
+                        </label>
+                        <input 
+                        type="text"
+                        name="brand" 
+                        id="brand" 
+                        class="block" 
+                        placeholder="Digite seus objetivos"
+                        required
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="purchase-date">Data de nascimento<span class="required-field"> *</span>
+                        </label>
+                        <input 
+                        type="date"
+                        name="purchase-date" 
+                        id="purchase-date" 
+                        class="block"
+                        required
+                        />
+                    </div>
+                    <div class="box-input">
+                       <p>Nível de escolaridade: <span class="required-field"> *</span></p>
+                        <input type="radio"
+                        id="school"
+                        name="estudante"
+                        />
+                        <label for="school">Estudante</label>
+                        <input type="radio"
+                        id="college"
+                        name="graduado"
+                        />
+                        <label for="college">Graduado</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>Conhecimentos:</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox"
+                                id="informatica"
+                                name="optional[]"
+                                value="informatica"
+                                />
+                                <label for="informatica">Informática</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox"
+                                id="ingles"
+                                name="optional[]"
+                                value="ingles"
+                                />
+                                <label for="ingles">Inglês</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox"
+                                id="espanhol"
+                                name="optional[]"
+                                value="espanhol"
+                                />
+                                <label for="espanhol">Espanhol</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox"
+                                id="redes"
+                                name="optional[]"
+                                value="redes"
+                                />
+                                <label for="redes">Redes Sociais</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox"
+                                id="pacore_office"
+                                name="optional[]"
+                                value="pacore_office"
+                                />
+                                <label for="pacore_office">Pacote Office 365</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox"
+                                id="trabalho_equipe"
+                                name="optional[]"
+                                value="trabalho_equipe"
+                                />
+                                <label for="trabalho_equipe">Trabalho em equipe</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox"
+                                id="comunicacao"
+                                name="optional[]"
+                                value="comunicacao"
+                                />
+                                <label for="comunicacao">Boa comunicação</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox"
+                                id="sistemas"
+                                name="optional[]"
+                                value="sistemas"
+                                />
+                                <label for="sistemas">Sistemas Operacionais</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Arquivo do currículo: <span class="required-field"> *</span></p>
+                        <input 
+                        type="file" 
+                        multiple 
+                        accept="pdf, image/jpg, image/png"
+                        id="image"
+                        name="images"
+                        placeholder="Escolha de arquivos"
+                        required
+                        />
+                    </div>
+                    <input type="submit"
+                    value="Enviar"
+                    class="btn-submit"
+                    />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
