@@ -1,4 +1,8 @@
 /* GERAL */
+body {
+    background-color: #a5d166;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,18 +15,22 @@ ul {
 
 a {
     text-decoration: none;
-    color: #444;
+    color: #532a8e;
     transition: 0.4s;
 }
 
 a:hover {
-    color: #37a1f7;
+    color: #6a36b5;
 }
 
 /* NAVBAR */
+#navbar, .navbar-inner {
+    background-color: #81b536;
+}
+
 #navbar {
     padding: 1.5rem 2.5rem;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #577a24;
 }
 
 .navbar-inner {
@@ -31,6 +39,10 @@ a:hover {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar-inner h2 {
+    color: #532a8e;
 }
 
 #nav-links {
@@ -80,7 +92,7 @@ a:hover {
 
 #search-bar, #categories, #tags {
     padding: 1.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid #577a24;
     margin-bottom: 1rem;
 }
 
@@ -95,14 +107,20 @@ a:hover {
 
 #search-bar input {
     padding: .5rem 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #577a24;
 }
 
 #search-bar input[type="submit"] {
     cursor: pointer;
-    background-color: #37a1f7;
+    background-color: #6a36b5;
     color: #fff;
     border: none;
+    transition: 0.5s;
+    margin-left: 5px;
+}
+
+#search-bar input[type="submit"]:hover {
+    background-color: #9266d1;
 }
 
 #categories li {
@@ -123,7 +141,7 @@ a:hover {
 
 /* FOOTER */
 footer {
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #577a24;
     padding: 3rem;
     text-align: center;
 }
