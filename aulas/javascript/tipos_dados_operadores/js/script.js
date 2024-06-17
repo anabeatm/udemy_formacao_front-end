@@ -30,3 +30,36 @@ console.log(typeof 'a');
 console.log("Testando a \nquebra de linha");
 
 console.log('Espaçamento de \ttab');
+
+// Aula 06 - Concatenação
+console.log('Oi,' + ' tudo' + ' bem?');
+
+// Aula 07 - Interpolação
+console.log(`A soma de 2 + 2 é: ${2 + 2}`);
+
+// Aula 08 - Booleanos
+console.log(true);
+
+console.log(5 > 20);
+
+console.log(30 + 10);
+
+// Aula 09 - Comparações
+console.log(5 <= 5);
+
+console.log(5 < 5);
+
+console.log(10 > 20);
+
+console.log(9 == 10);
+
+console.log(9 != 10);
+
+// Aula 10 - Valor idêntico
+console.log(9 == '9');
+
+console.log(9 === '9');
+
+console.log(9 != '9');
+
+console.log(9 !== '9');
