@@ -63,3 +63,40 @@ console.log(9 === '9');
 console.log(9 != '9');
 
 console.log(9 !== '9');
+
+// Aula 11 - Operadores lógicos
+console.log(true && true);
+
+console.log(true && false);
+
+console.log(5 > 2 && 2 < 10);
+
+console.log(5 > 2 && 'Matheus' === 1);
+
+console.log(5 > 2 || 'Matheus' === 1);
+
+console.log(5 < 2 || 100 < 2);
+
+console.log(!true);
+
+console.log(!5 > 2);
+
+// Aula 12 - Empty values
+console.log(typeof null, typeof undefined);
+
+console.log(null == undefined);
+
+console.log(null === undefined);
+
+console.log(null == false);
+
+console.log(undefined == false);
+
+// Aula 13 - Mudanças de tipos
+console.log(5 * null);
+
+console.log('teste' * 'opa');
+
+console.log('10' + 1);
+
+console.log('10' - 9);
