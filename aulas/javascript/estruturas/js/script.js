@@ -126,3 +126,69 @@
 //     o--;
 // } while(0 > 1);
 
+// Aula 12 - for
+// for(let t = 0; t < 10; t++) {
+//     // variável de referência; a condição; incrementador
+//     console.log("Repetindo algo 10x.");
+// }
+
+// let r = 10;
+// for(r; r > 0; r -= 1) {
+//     console.log(r);
+// }
+
+// Aula 13 - identação
+// for(u = 0; u < 10; u++) {
+//     if(u * 2 > 10) {
+//         console.log("Maior que 10.")
+//     }
+//     else {
+//         if(u / 2 === 0) {
+//             console.log("Deu 0.")
+//         }
+//     }
+// }
+// Importante a utilização do tab para a organizar e limpeza do código.
+
+// Aula 14 - forçando o loop (break)
+// for(let g = 20; g > 10; g--) {
+//     console.log(`O valor de g é: ${g}`);
+
+//     if(g === 12) {
+//         console.log("Para!");
+//         break;
+//     }
+// }
+
+// Aula 15 - continue
+// for(let s = 1; s < 10; s += 1) {
+//     // operador de resto = %
+//     if(s % 2 === 0) {
+//         console.log("O número é par!");
+//         continue
+//     }
+
+//     console.log(s);
+// }
+
+// Aula 16 - switch
+// const job = "Adovagado";
+
+// switch(job) {
+//     // avaliar a variável
+//     case "Programador":
+//     // qual valor preciso comparar com o valor passado ao `switch`
+//     // e o que o `case` vai executar
+//         console.log("Você é um programador!");
+//         break;
+//     case "Adovagado":
+//         console.log("Você é um Advogado!");
+//         break;
+//         // finalizar a instrução/bloco
+//     case "Engenheiro civil":
+//         console.log("Você é Engenheiro Civil!");
+//         break;
+//     default:
+//         // semelhante ao else
+//         console.log("Profissão não encontrada.");
+// }
