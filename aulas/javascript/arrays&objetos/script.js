@@ -50,3 +50,60 @@ console.log(arr[0]); // -> saída: a
 // console.log(person.name.length);
 
 // aula 5 - criando e deletando propriedades
+// const car = {
+//   engine: 2.0,
+//   brand: "W",
+//   model: "Tiguan",
+//   km: 20000,
+// };
+
+// console.log(car);
+
+// car.doors = 4; // adicionando propriedade
+
+// console.log(car);
+
+// delete car.km; // deletando propriedades
+
+// console.log(car);
+
+// aula 6 - mais sobre objetos
+// const obj = {
+//   a: "teste",
+//   b: true,
+// };
+
+// console.log(obj instanceof Object);
+
+// const obj2 = {
+//   c: [],
+// };
+
+// Object.assign(obj2, obj); // Object.assign(segundo objeto, primeiro objeto)
+// console.log(obj2);
+
+// // aula 7 - conhecendo melhor os objetos
+// console.log(Object.keys(obj));
+// console.log(Object.keys(obj2));
+
+// console.log(Object.entries(obj2));
+
+// aula 8 - mutação
+// const a = {
+//   name: "matheus",
+// };
+
+// const b = a;
+
+// console.log(a);
+// console.log(b);
+
+// console.log(a==b)
+
+// a.age = 31
+// console.log(a);
+// console.log(b);
+
+// delete b.age
+// console.log(a);
+// console.log(b);
