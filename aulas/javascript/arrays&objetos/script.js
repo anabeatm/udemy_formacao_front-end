@@ -191,10 +191,10 @@ const array = ["a", "b", "c"];
 // });
 
 // 15 - includes
-const brands = ["BMW", "VW", "Fiat"];
+// const brands = ["BMW", "VW", "Fiat"];
 
-console.log(brands.includes("Fiat"));
-console.log(brands.includes("Não sei marcas de carro :)"));
+// console.log(brands.includes("Fiat"));
+// console.log(brands.includes("Não sei marcas de carro :)"));
 
 // let brands01 = [];
 // function addBrand() {
@@ -214,3 +214,52 @@ console.log(brands.includes("Não sei marcas de carro :)"));
 //   console.log("Não há essa marca na loja.");
 // }
 
+// 16 - reverse
+// const reverseTest = [1, 2, 3, 4, 5];
+
+// reverseTest.reverse();
+
+// console.log(reverseTest);
+
+// 17 - Trim
+// const trimTest = " \n   teste de string com espaços   \n";
+
+// console.log(trimTest);
+
+// console.log(trimTest.trim());
+
+// console.log(trimTest.length);
+// console.log(trimTest.trim().length);
+
+//  18 - padStart e padEnd
+
+// const testePadStart = "1";
+
+// let newNumber = testePadStart.padStart(4, "0");
+
+// console.log(testePadStart);
+// console.log(newNumber);
+
+// const testePadEnd = "1";
+
+// newNumber = testePadEnd.padEnd(4, "0");
+
+// console.log(newNumber);
+
+// 19 - split
+const venda = "Maria Carla, 5, 450.00, 12/09/2006";
+
+let vendaArray = venda.split(",");
+
+console.log(vendaArray);
+
+// console.log("Nome: " + vendaArray[0]);
+// console.log("Itens Vendidos: " + vendaArray[1] + " itens");
+// console.log("R$: " + vendaArray[2]);
+// console.log("Data: " + vendaArray[3]);
+
+// 20 - join
+
+const joinTeste = vendaArray.join(" - ");
+
+console.log(joinTeste);
