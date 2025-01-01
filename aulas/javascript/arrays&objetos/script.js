@@ -247,11 +247,11 @@ const array = ["a", "b", "c"];
 // console.log(newNumber);
 
 // 19 - split
-const venda = "Maria Carla, 5, 450.00, 12/09/2006";
+// const venda = "Maria Carla, 5, 450.00, 12/09/2006";
 
-let vendaArray = venda.split(",");
+// let vendaArray = venda.split(",");
 
-console.log(vendaArray);
+// console.log(vendaArray);
 
 // console.log("Nome: " + vendaArray[0]);
 // console.log("Itens Vendidos: " + vendaArray[1] + " itens");
@@ -260,6 +260,83 @@ console.log(vendaArray);
 
 // 20 - join
 
-const joinTeste = vendaArray.join(" - ");
+// const joinTeste = vendaArray.join(" - ");
 
-console.log(joinTeste);
+// console.log(joinTeste);
+
+// // 21 - repeat
+
+// const palavra = "teste ";
+
+// console.log(palavra.repeat(3));
+
+// 22 - rest operator
+
+// const somaInfinita = (...args) => {
+//   let total = 0;
+
+//   for (let i = 0; i < args.length; i++) {
+//     total += args[i];
+//   }
+
+//   return total;
+// };
+
+// console.log(somaInfinita(1, 2, 3));
+
+// console.log(somaInfinita(32, 565, 345, 5654));
+
+// 23 - for off
+
+// const somaInfinita = (...args) => {
+
+//   let total = 0;
+
+//   for (num of args) {
+//     total += num;
+//   }
+
+//   return total;
+// };
+
+// console.log(somaInfinita(1, 2, 3));
+
+// 24 - destructuring em objetos
+// const userDetails = {
+//     firstName: "João",
+//     lastName: "Silva",
+//     job: "carniceiro"
+// };
+
+// const {firstName, lastName, job} = userDetails;
+
+// console.log(firstName, lastName, job);
+
+// renomear variáveis
+
+// const {firstName: primeiroNome} = userDetails;
+
+// console.log(primeiroNome);
+// console.log(firstName);
+
+// 25 - destructuring em arrays
+// const myList = ["arroz", "feijão", "macarrão", "carne"];
+
+// const [itemA, itemB, itemC] = myList;
+
+// console.log(itemA, itemB, itemC);
+
+// 26 - JSON
+const myJSON =
+  '{"name": "Matheus", "age": 31, "job": "programador", "skills": ["PHP", "JS", "Python"]}';
+
+// JSON para objeto e objeto para JSON
+const myObject = JSON.parse(myJSON);
+
+console.log(myObject);
+
+console.log(myObject.name);
+
+const myNewJSON = JSON.stringify(myObject);
+
+console.log(myNewJSON);
